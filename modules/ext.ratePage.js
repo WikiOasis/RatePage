@@ -70,7 +70,6 @@ mw.RatePage = function () {
 			pageids: Object.keys( idToWidgetMap )
 		} )
 			.done( function ( data ) {
-				console.debug(starMap);
 				Object.keys( data.query.pages ).forEach( function ( pageid ) {
 					var voteCount = null, avg = null;
 					var d = data.query.pages[pageid].pagerating;
