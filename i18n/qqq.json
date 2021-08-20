@@ -29,6 +29,7 @@
 	"action-ratepage-contests-clear": "{{doc-action|ratepage-contests-clear}}",
 	"right-ratepage-contests-view-list": "{{doc-right|ratepage-contests-view-list}}",
 	"right-ratepage-contests-view-details": "{{doc-right|ratepage-contests-view-details}}",
+	"right-ratepage-vote": "{{doc-right|ratepage-vote}}",
 	"right-ratepage-contests-edit": "{{doc-right|ratepage-contests-edit}}",
 	"right-ratepage-contests-clear": "{{doc-right|ratepage-contests-clear}}",
 	"ratePage-contest-disabled": "Status label for use in a summarized view of all contests",

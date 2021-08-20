@@ -28,6 +28,7 @@
 	"action-ratepage-contests-clear": "clear a contest's results",
 	"right-ratepage-contests-view-list": "View contests list",
 	"right-ratepage-contests-view-details": "View details of a contest",
+	"right-ratepage-vote": "Vote for a page",
 	"right-ratepage-contests-edit": "Edit a contest",
 	"right-ratepage-contests-clear": "Clear a contest's results",
 	"ratePage-contest-disabled": "disabled",
