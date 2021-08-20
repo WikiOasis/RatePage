@@ -70,7 +70,7 @@ trait RatePageApiTrait {
 
 		$this->contestId = '';
 		$this->permissions = [
-			'vote' => $context->getUser()->isAllowed("ratepage-vote"),
+			'vote' => $this->user->isAllowed( 'ratepage-vote' ),
 			'see' => true
 		];
 
