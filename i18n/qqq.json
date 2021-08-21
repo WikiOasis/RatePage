@@ -64,6 +64,7 @@
 	"logentry-ratepage-contest-change": "{{logentry|[[Special:Log/ratepage-contest]]}}",
 	"ratePage-log-contest-formatter": "Fragment of a log entry specifying the contest's identifier. $1 is the identifier.",
 	"ratePage-no-such-contest": "Error message. $1 is the contest's identifier.",
+	"ratePage-page-cannot-vote": "Notice for users displayed in the rating widget for a page (not in a contest).",
 	"ratePage-vote-cannot-vote": "Notice for users displayed in the rating widget.",
 	"ratePage-vote-cannot-see": "Notice for users displayed in the rating widget.",
 	"ratepagecontests": "Special page full title to be used on [[Special:SpecialPages]]",

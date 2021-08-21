@@ -39,6 +39,12 @@ mw.RatePage = function () {
 					avg = avg / voteCount;
 				}
 
+        var isContest = false;
+
+        if ( contest !== '' ) {
+          isContest = true;
+        }
+
 				starMap[contest][pageId].forEach( function ( widget ) {
 					self.updateStars(
 						avg,
@@ -48,6 +54,7 @@ mw.RatePage = function () {
 						data.canSee,
 						data.showResultsBeforeVoting,
 						false,
+            isContest,
 						widget,
 						starMap
 					);
@@ -85,6 +92,11 @@ mw.RatePage = function () {
 						avg = avg / voteCount;
 					}
 
+          var isContest = false;
+          if ( contest !== "" ) {
+            isContest = true;
+          }
+
 					idToWidgetMap[pageid].forEach( function ( widget ) {
 						self.updateStars(
 							avg,
@@ -94,6 +106,7 @@ mw.RatePage = function () {
 							d.canSee,
 							d.showResultsBeforeVoting,
 							true,
+              isContest,
 							widget,
 							starMap
 						);
@@ -111,10 +124,11 @@ mw.RatePage = function () {
 	 * @param canSee
 	 * @param showResultsBeforeVoting
 	 * @param isNew
+   * @param isContest
 	 * @param parent
 	 * @param starMap
 	 */
-	self.updateStars = function ( average, vCount, userVote, canVote, canSee, showResultsBeforeVoting, isNew, parent, starMap ) {
+	self.updateStars = function ( average, vCount, userVote, canVote, canSee, showResultsBeforeVoting, isNew, isContest, parent, starMap ) {
 		function typeForLastStar( f2 ) {
 			if ( f2 < 0.05 ) {
 				return 'ratingstar-plain';
@@ -140,7 +154,11 @@ mw.RatePage = function () {
 				yourVote = mw.message( 'ratePage-prompt' ).text();
 			}
 		} else {
-			yourVote = mw.message( 'ratePage-vote-cannot-vote' ).text();
+      if ( isContest ) {
+			  yourVote = mw.message( 'ratePage-vote-cannot-vote' ).text();
+      } else {
+        yourVote = mw.message( 'ratePage-page-cannot-vote' ).text();
+      }
 		}
 
 		if ( ( userVote && userVote !== -1 ) ||
