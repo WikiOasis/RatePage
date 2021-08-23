@@ -148,7 +148,7 @@ mw.RatePage = function () {
 			}
 		} else {
 			if ( isContest ) {
-			  yourVote = mw.message( 'ratePage-vote-cannot-vote' ).text();
+				yourVote = mw.message( 'ratePage-vote-cannot-vote' ).text();
 			} else {
 				yourVote = mw.message( 'ratePage-page-cannot-vote' ).text();
 			}
