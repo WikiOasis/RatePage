@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hedda",
 			"Joseph"
 		]
 	},
@@ -27,6 +28,7 @@
 	"action-ratepage-contests-clear": "bir yarışma sonuçlarını temizlemeye",
 	"right-ratepage-contests-view-list": "Yarışma listesini gör",
 	"right-ratepage-contests-view-details": "Bir yarışmanın ayrıntılarını gör",
+	"right-ratepage-vote": "Bir sayfaya oy verin",
 	"right-ratepage-contests-edit": "Bir yarışmayı değiştir",
 	"right-ratepage-contests-clear": "Bir yarışma sonuçlarını temizle",
 	"ratePage-contest-disabled": "devre dışı",
@@ -61,6 +63,7 @@
 	"logentry-ratepage-contest-change": "$1, $4 yarışmasını {{GENDER:$2|değiştirdi}}",
 	"ratePage-log-contest-formatter": "$1 yarışması",
 	"ratePage-no-such-contest": "Hata: \"$1\" yarışması mevcut değil.",
+	"ratePage-page-cannot-vote": "Oy kullanmanıza izin verilmiyor",
 	"ratePage-vote-cannot-vote": "Bu yarışmada oy veremezsiniz",
 	"ratePage-vote-cannot-see": "Bu yarışmanın sonuçlarını göremezsiniz",
 	"ratepagecontests": "SayfaDeğerlendir yarışma yönetimi",
