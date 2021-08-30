@@ -1,15 +1,17 @@
 <?php
 
 namespace RatePage;
-use DisambiguatorHooks;
 use Exception;
 use ExtensionRegistry;
+use MediaWiki\Extension\Disambiguator;
 use MediaWiki\MediaWikiServices;
 use RatePage\SMW\DataRebuilder;
 use Title;
 
 /**
  * RatePage page rating code
+ *
+ * TODO: servicify this.
  *
  * @file
  * @ingroup Extensions
@@ -48,10 +50,12 @@ class Rating {
 			return false;
 		}
 
-		if ( ExtensionRegistry::getInstance()->isLoaded( 'Disambiguator' ) &&
-			DisambiguatorHooks::isDisambiguationPage( $title )
-		) {
-			return false;
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'Disambiguator' ) ) {
+			/** @var Disambiguator\Lookup $lookup */
+			$lookup = MediaWikiServices::getInstance()->getService( 'DisambiguatorLookup' );
+			if ( $lookup->isDisambiguationPage( $title ) ) {
+				return false;
+			}
 		}
 
 		return true;
