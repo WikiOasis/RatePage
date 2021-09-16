@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Romaine"
 		]
 	},
 	"ratePage-vote-error": "Er is iets misgegaan en uw stem kon niet worden opgeslagen.",
@@ -21,6 +22,7 @@
 	"ratePage-edit-save": "Opslaan",
 	"ratePage-results-list-page": "Pagina",
 	"ratePage-results-list-count": "Aantal stemmen",
+	"ratePage-property-average-alias": "Gemiddelde score",
 	"group-*": "(iedereen)",
 	"ratePage-edit-export": "Resultaten exporteren"
 }
