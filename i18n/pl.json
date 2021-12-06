@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kwilke",
 			"Ostrzyciel",
 			"Polskacafe"
 		]
@@ -63,6 +64,7 @@
 	"logentry-ratepage-contest-change": "$1 {{GENDER:$2|zmienił|zmieniła}} $4",
 	"ratePage-log-contest-formatter": "konkurs $1",
 	"ratePage-no-such-contest": "Błąd: konkurs „$1” nie istnieje.",
+	"ratePage-page-cannot-vote": "",
 	"ratePage-vote-cannot-vote": "Nie możesz głosować w tym konkursie",
 	"ratePage-vote-cannot-see": "Nie możesz sprawdzić wyników tego konkursu",
 	"ratepagecontests": "Zarządzanie konkursami RatePage",
