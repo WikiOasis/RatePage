@@ -65,47 +65,54 @@ mw.RatePage = function () {
 	 * @param starMap
 	 */
 	self.getRating = function ( idToWidgetMap, contest, starMap ) {
-		( new mw.Api() ).post( {
-			action: 'query',
-			prop: 'pagerating',
-			format: 'json',
-			prcontest: contest,
-			pageids: Object.keys( idToWidgetMap )
-		} )
-			.done( function ( data ) {
-				Object.keys( data.query.pages ).forEach( function ( pageid ) {
-					var voteCount = null, avg = null;
-					var d = data.query.pages[pageid].pagerating;
+		var pageids = Object.keys( idToWidgetMap );
+		const pageidsLimit = 50;   // MediaWiki supports up to 50 pageIds at a time
+		var pageidsStart = 0;
+		while (pageidsStart < pageids.length) {
+			var pageidsSubset = pageids.slice(pageidsStart, pageidsStart+pageidsLimit);
+			pageidsStart += pageidsLimit;
+			( new mw.Api() ).post( {
+				action: 'query',
+				prop: 'pagerating',
+				format: 'json',
+				prcontest: contest,
+				pageids: pageidsSubset
+			} )
+				.done( function ( data ) {
+					Object.keys( data.query.pages ).forEach( function ( pageid ) {
+						var voteCount = null, avg = null;
+						var d = data.query.pages[pageid].pagerating;
 
-					if ( !d ) {
-						return;
-					}
-					if ( d.pageRating ) {
-						voteCount = 0;
-						for ( var i = 1; i <= self.maxRating; i++ ) voteCount += ( d.pageRating[i] );
-						avg = 0;
-						for ( i = 1; i <= self.maxRating; i++ ) avg += ( d.pageRating[i] * i );
-						avg = avg / voteCount;
-					}
+						if ( !d ) {
+							return;
+						}
+						if ( d.pageRating ) {
+							voteCount = 0;
+							for ( var i = 1; i <= self.maxRating; i++ ) voteCount += ( d.pageRating[i] );
+							avg = 0;
+							for ( i = 1; i <= self.maxRating; i++ ) avg += ( d.pageRating[i] * i );
+							avg = avg / voteCount;
+						}
 
-					var isContest = !!contest;
+						var isContest = !!contest;
 
-					idToWidgetMap[pageid].forEach( function ( widget ) {
-						self.updateStars(
-							avg,
-							voteCount,
-							d.userVote,
-							d.canVote,
-							d.canSee,
-							d.showResultsBeforeVoting,
-							true,
-							isContest,
-							widget,
-							starMap
-						);
+						idToWidgetMap[pageid].forEach( function ( widget ) {
+							self.updateStars(
+								avg,
+								voteCount,
+								d.userVote,
+								d.canVote,
+								d.canSee,
+								d.showResultsBeforeVoting,
+								true,
+								isContest,
+								widget,
+								starMap
+							);
+						} );
 					} );
 				} );
-			} );
+			}
 	};
 
 	/**
