@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"DDPAT"
+			"DDPAT",
+			"Ice bulldog"
 		]
 	},
 	"apihelp-ratepage-summary": "Дозволяє користувачеві голосувати на сторінці та отримує рейтинг сторінки. Потрібно вказати один з двох параметрів: pageid або pagetitle.",
