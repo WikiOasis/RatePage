@@ -319,11 +319,12 @@ mw.RatePage = function () {
 			mw.config.get( 'wgRevisionId' ) !== 0 ) {
 
 			/* add main rating stars (in sidebar or footer) */
-			var stars;
+			var stars, footerStars;
 
 			var skin = mw.config.get( 'skin' );
 			if (
-				( skin === 'minerva' || mw.config.get( 'wgRPTarget' ) === 'mobile' ) &&
+				( skin === 'minerva' || skin === 'timeless' ||
+				mw.config.get( 'wgRPTarget' ) === 'mobile' ) &&
 				!$( '.footer-ratingstars' ).length
 			) {
 				var starHtml = '<div class="post-content footer-element active footer-ratingstars" style="margin-top: 22px"> \
@@ -339,21 +340,22 @@ mw.RatePage = function () {
 					<span class="ratingsinfo-mobile"><span class="ratingsinfo-yourvote"></span>\
 					<span class="ratingsinfo-avg"></span></span></div>';
 
-				stars = $( starHtml );
+				footerStars = $( starHtml );
 
 				if ( skin === 'minerva' ) {
-					$( '.last-modified-bar' ).after( stars );
+					$( '.last-modified-bar' ).after( footerStars );
 				} else if ( skin === 'timeless' ) {
 					var afterContent = $( '#mw-data-after-content' );
 					if ( afterContent.length === 1 ) {
-						afterContent.prepend( stars );
+						afterContent.prepend( footerStars );
 					} else {
-						afterContent = $( '<div id="mw-data-after-content"></div>' ).append( stars );
+						afterContent = $( '<div id="mw-data-after-content"></div>' ).append( footerStars );
 						$( '#content-bottom-stuff' ).append( afterContent );
 					}
 
 				}
-			} else if ( !$( '#ratingstars' ).length ) {
+			}
+			if ( !$( '#ratingstars' ).length ) {
 				// for timeless
 				$( '#p-ratePage-vote-title' ).removeClass( "emptyPortlet" );
 				stars = $( '<div id="ratingstars"></div>' );
@@ -373,6 +375,10 @@ mw.RatePage = function () {
 
 			if ( stars ) {
 				self.addToStarMap( '', mw.config.get( 'wgArticleId' ), stars );
+			}
+
+			if ( footerStars ) {
+				self.addToStarMap( '', mw.config.get( 'wgArticleId' ), footerStars );
 			}
 		}
 
