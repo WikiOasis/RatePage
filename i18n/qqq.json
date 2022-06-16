@@ -3,7 +3,8 @@
 		"authors": [
 			"Ostrzyciel",
 			"Polskacafe",
-			"Robby"
+			"Robby",
+			"Verdy p"
 		]
 	},
 	"ratePage": "The name of the extension",
@@ -32,7 +33,7 @@
 	"right-ratepage-vote": "{{doc-right|ratepage-vote}}",
 	"right-ratepage-contests-edit": "{{doc-right|ratepage-contests-edit}}",
 	"right-ratepage-contests-clear": "{{doc-right|ratepage-contests-clear}}",
-	"ratePage-contest-disabled": "Status label for use in a summarized view of all contests",
+	"ratePage-contest-disabled": "Status label for use in a summarized view of all contests\n{{Identical|Disabled}}",
 	"ratePage-contest-enabled": "Status label for use in a summarized view of all contests",
 	"ratePage-contests-list-enabled": "Table header label for use in a summarized view of all contests\n{{identical|Status}}",
 	"ratePage-contests-list-id": "Table header label for use in a summarized view of all contests",
