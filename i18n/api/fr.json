@@ -5,7 +5,7 @@
 		]
 	},
 	"apihelp-ratepage-summary": "Permet à un utilisateur de voter sur une page et obtient l’évaluation d’une page. Nécessite la spécification d’un des deux paramètres : « pageid » ou « pagetitle ».",
-	"apihelp-ratepage-param-pageid": "ID de la page",
+	"apihelp-ratepage-param-pageid": "Identifiant de la page",
 	"apihelp-ratepage-param-pagetitle": "Titre de la page",
 	"apihelp-ratepage-param-answer": "Évaluation de la page par l’utilisateur (par défaut de 1 à 5 bornes incluses, peut être ajusté par des paramètres de configuration)",
 	"apihelp-ratepage-param-contest": "Identifiant du concours",
