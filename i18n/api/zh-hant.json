@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"捍粵者"
 		]
 	},
-	"apihelp-ratepage-summary": "允許使用者對頁面進行投票並取得頁面的評分。需指定以下兩個參數其一：pageid 或 pagetitle。",
+	"apihelp-ratepage-summary": "允許使用者為頁面投票並取得頁面評分，須指定參數pageid或pagetitle。",
 	"apihelp-ratepage-param-pageid": "頁面 ID",
 	"apihelp-ratepage-param-pagetitle": "頁面標題",
 	"apihelp-ratepage-param-answer": "使用者的頁面評分（預設從 1 分到 5 分，可透過配置設定更改）",
