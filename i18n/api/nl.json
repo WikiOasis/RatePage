@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98",
+			"McDutchie"
+		]
+	},
+	"apihelp-ratepage-summary": "Laat een gebruiker over een pagina stemmen en verkrijgt de beoordeling van een pagina. Vereist één van de twee parameters: pageid of pagetitle.",
+	"apihelp-ratepage-param-pageid": "Pagina-ID",
+	"apihelp-ratepage-param-pagetitle": "Paginatitel",
+	"apihelp-ratepage-example-1": "Haal de huidige beoordeling op voor pagina Voorbeeld.",
+	"apierror-ratepage-contest-id-allowed-chars": "Wedstrijd-ID mag alleen uit cijfers en Latijnse letters bestaan. Andere tekens zijn niet toegestaan."
+}
