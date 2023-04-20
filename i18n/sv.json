@@ -4,7 +4,6 @@
 			"Sabelöga"
 		]
 	},
-	"ratePage": "RatePage",
 	"ratePage-desc": "Låter användare betygsätta sidor och anordna tävlingar.",
 	"ratePage-vote-error": "Något blev fel och din röst kunde inte sparas.",
 	"ratePage-vote-title": "Betygsätt artikel",

@@ -5,7 +5,6 @@
 			"Ice bulldog"
 		]
 	},
-	"ratePage": "RatePage",
 	"ratePage-desc": "Дозволяє користувачам оцінювати сторінки та налаштовувати конкурси.",
 	"ratePage-vote-error": "Щось пішло не так, і голос не вдалося зберегти.",
 	"ratePage-vote-title": "Оцінити статтю",

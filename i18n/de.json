@@ -6,7 +6,6 @@
 			"Zabe"
 		]
 	},
-	"ratePage": "RatePage",
 	"ratePage-desc": "Macht es dem Benutzer möglich, Seiten zu bewerten und Wettbewerbe einzurichten.",
 	"ratePage-vote-error": "Ein Fehler ist aufgetreten. Die Stimme wurde nicht gezählt.",
 	"ratePage-vote-title": "Artikel bewerten",

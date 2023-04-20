@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ostrzyciel",
 			"Polskacafe",
 			"Robby",
 			"Verdy p"
 		]
 	},
-	"ratePage": "The name of the extension",
+	"ratePage": "{{Name}}",
 	"ratePage-desc": "{{desc|name=RatePage|url=}}",
 	"ratePage-vote-error": "Error message displayed upon voting failure",
 	"ratePage-vote-title": "Main label of the rating widget",

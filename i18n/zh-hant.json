@@ -5,7 +5,6 @@
 			"捍粵者"
 		]
 	},
-	"ratePage": "RatePage",
 	"ratePage-desc": "啟用後，使用者能為頁面評分並舉行競賽。",
 	"ratePage-vote-error": "發生錯誤，無法儲存投票。",
 	"ratePage-vote-title": "評分條目",
