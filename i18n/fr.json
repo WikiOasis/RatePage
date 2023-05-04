@@ -63,7 +63,7 @@
 	"logentry-ratepage-contest-change": "$1{{GENDER:$2|}} a modifié $4",
 	"ratePage-log-contest-formatter": "concours $1",
 	"ratePage-no-such-contest": "Erreur : le concours « $1 » n’existe pas.",
-	"ratePage-page-cannot-vote": "Vous n’êtes pas autorisé à voter",
+	"ratePage-page-cannot-vote": "Vous n’êtes pas autorisé{{GENDER:||e}} à voter",
 	"ratePage-vote-cannot-vote": "Vous ne pouvez pas voter dans ce concours",
 	"ratePage-vote-cannot-see": "Vous ne pouvez pas voir les résultats de ce concours",
 	"ratepagecontests": "Gestion des concours RatePage",
