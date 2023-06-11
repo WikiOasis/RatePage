@@ -41,6 +41,7 @@ class Hooks {
 		$config = MediaWikiServices::getInstance()->getMainConfig();
 
 		$jsVars = [
+			'RPFooterRatingStars',
 			'RPRatingAllowedNamespaces',
 			'RPRatingPageBlacklist',
 			'RPRatingMin',

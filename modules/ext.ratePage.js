@@ -325,7 +325,8 @@ mw.RatePage = function () {
 			if (
 				( skin === 'minerva' || skin === 'timeless' ||
 				mw.config.get( 'wgRPTarget' ) === 'mobile' ) &&
-				!$( '.footer-ratingstars' ).length
+				!$( '.footer-ratingstars' ).length &&
+				mw.config.get( 'wgRPFooterRatingStars' )
 			) {
 				var starHtml = '<div class="post-content footer-element active footer-ratingstars" style="margin-top: 22px"> \
 					<h2>' + mw.message( "ratePage-vote-title" ).text() + '</h2> \
