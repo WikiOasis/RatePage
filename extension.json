@@ -5,7 +5,7 @@
 		"Polskacafe"
 	],
 	"license-name": "GPL-2.0-or-later",
-	"version": "2.13.1",
+	"version": "2.14.0",
 	"requires": {
 		"MediaWiki": ">= 1.36.0"
 	},
