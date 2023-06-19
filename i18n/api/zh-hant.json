@@ -10,7 +10,7 @@
 	"apihelp-ratepage-param-pagetitle": "頁面標題",
 	"apihelp-ratepage-param-answer": "使用者的頁面評分（預設從 1 分到 5 分，可透過配置設定更改）",
 	"apihelp-ratepage-param-contest": "競賽標識",
-	"apihelp-ratepage-example-1": "取得頁面範例的目前評分，",
+	"apihelp-ratepage-example-1": "取得頁面範例的目前評分。",
 	"apihelp-ratepage-example-2": "對頁面範例評 2 分。",
 	"apihelp-query+pagerating-summary": "回傳此頁面上的投票與該使用者的投票權限。",
 	"apihelp-query+pagerating-param-contest": "競賽標識",
