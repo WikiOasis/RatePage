@@ -59,7 +59,7 @@
 	"ratePage-contest-log": "Dnevnik natečajev",
 	"ratePage-contest-log-header": "To je dnevnik sprememb natečajev RatePage.",
 	"logentry-ratepage-contest-create": "$1 {{GENDER:$2|je ustvaril|je ustvarila|je ustvaril_a}} $4",
-	"logentry-ratepage-contest-change": "$1 {{GENDER:$2|je spremenil|je spremenila|je spremenil/a}} $4",
+	"logentry-ratepage-contest-change": "$1 {{GENDER:$2|je spremenil|je spremenila|je spremenil_a}} $4",
 	"ratePage-log-contest-formatter": "natečaj $1",
 	"ratePage-no-such-contest": "Napaka: natečaj »$1« ne obstaja.",
 	"ratePage-page-cannot-vote": "Do glasovanja niste upravičeni.",
