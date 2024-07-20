@@ -19,7 +19,13 @@ class RatePageMmvHooks extends \MediaWiki\Extension\MultimediaViewer\Hooks {
 	public static function isMmvEnabled( User $user ) : bool {
 		// TODO: use proper DI here
 		$mwInstance = MediaWikiServices::getInstance();
-		$instance = new self( $mwInstance->getUserOptionsLookup(), $mwInstance->getSpecialPageFactory() );
+		if (version_compare( MW_VERSION, '1.41', '>' ) ) {
+			$instance = new self( $mwInstance->getMainConfig(), $mwInstance->getSpecialPageFactory(), $mwInstance->getUserOptionsLookup(), null );
+		} else if ( version_compare( MW_VERSION, '1.41', '=' ) ) {
+			$instance = new self( $mwInstance->getUserOptionsLookup(), $mwInstance->getSpecialPageFactory() );
+		} else {
+			$instance = new self( $mwInstance->getUserOptionsLookup() );
+		}
 		return $instance->shouldHandleClicks( $user );
 	}
 }
