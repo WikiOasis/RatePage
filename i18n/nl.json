@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"Romaine"
+			"Romaine",
+			"SPQRobin"
 		]
 	},
 	"ratePage-vote-error": "Er is iets misgegaan en uw stem kon niet worden opgeslagen.",
@@ -22,7 +23,10 @@
 	"ratePage-edit-save": "Opslaan",
 	"ratePage-results-list-page": "Pagina",
 	"ratePage-results-list-count": "Aantal stemmen",
+	"ratePage-page-cannot-vote": "U hebt geen toestemming om te stemmen",
+	"ratePage-deleted-page": "(verwijderde pagina)",
 	"ratePage-property-average-alias": "Gemiddelde score",
 	"group-*": "(iedereen)",
+	"ratePage-prompt-can-see": "U hebt nog niet gestemd",
 	"ratePage-edit-export": "Resultaten exporteren"
 }
