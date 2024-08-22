@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"McDutchie",
 			"Ostrzyciel",
 			"Polskacafe",
 			"Robby",
@@ -20,7 +21,7 @@
 	"ratePage-caption-4": "Title of the second best rating shown when hovering over it with the cursor\n{{identical|Good}}",
 	"ratePage-caption-5": "Title of the best rating shown when hovering over it with the cursor",
 	"ratePage-prompt": "Prompt encouraging the user to vote, so that they can see the results",
-	"ratePage-error-category": "Tracking category name for pages with invalid RatePage widgets",
+	"ratePage-error-category": "Tracking category name for pages with invalid RatePage widgets\n\n{{Tracking category name}}",
 	"ratePage-missing-argument-page": "Error message for the embeddable rating widget",
 	"ratePage-page-does-not-exist": "Error message for the embeddable rating widget",
 	"ratePage-contest-id-too-long": "Error message for the embeddable rating widget",
