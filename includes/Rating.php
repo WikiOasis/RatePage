@@ -249,7 +249,7 @@ class Rating {
 		];
 
 		//check whether the user has voted during a transaction to avoid a duplicate vote
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 		$res = $dbw->selectField(
 			'ratepage_vote',
