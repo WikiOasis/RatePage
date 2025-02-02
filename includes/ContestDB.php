@@ -51,7 +51,7 @@ class ContestDB {
 	}
 
 	public static function saveContest( $newRow, IContextSource $context ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 
 		$data = [
 			'rpc_description' => $newRow->rpc_description ?? '',

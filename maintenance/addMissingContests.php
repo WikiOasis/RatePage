@@ -21,7 +21,7 @@ class AddMissingContests extends LoggedUpdateMaintenance {
 	 * @return bool
 	 */
 	protected function doDBUpdates() : bool {
-		$dbw = $this->getDB( DB_MASTER );
+		$dbw = $this->getDB( DB_PRIMARY );
 
 		$res = $dbw->select(
 			[
