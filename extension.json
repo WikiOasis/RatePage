@@ -12,7 +12,6 @@
 	"namemsg": "ratePage",
 	"descriptionmsg": "ratePage-desc",
 	"url": "https://www.mediawiki.org/wiki/Extension:RatePage",
-	"manifest_version": 1,
 	"MessagesDirs": {
 		"RatePage": [
 			"i18n",
@@ -20,19 +19,45 @@
 		]
 	},
 	"config": {
-		"RPFooterRatingStars": true,
-		"RPRatingAllowedNamespaces": null,
-		"RPRatingPageBlacklist": [],
-		"RPSidebarPosition": 2,
-		"RPRatingMin": 1,
-		"RPRatingMax": 5,
-		"RPFrontendEnabled": true,
-		"RPAddSidebarSection": true,
-		"RPUseMMVModule": true,
-		"RPEnableSMWRatings": true,
-		"RPEnableSMWContests": true,
-		"RPShowResultsBeforeVoting": false,
-		"RPImmediateSMWUpdate": false
+		"RPFooterRatingStars": {
+			"value": true
+		},
+		"RPRatingAllowedNamespaces": {
+			"value": null
+		},
+		"RPRatingPageBlacklist": {
+			"value": []
+		},
+		"RPSidebarPosition": {
+			"value": 2
+		},
+		"RPRatingMin": {
+			"value": 1
+		},
+		"RPRatingMax": {
+			"value": 5
+		},
+		"RPFrontendEnabled": {
+			"value": true
+		},
+		"RPAddSidebarSection": {
+			"value": true
+		},
+		"RPUseMMVModule": {
+			"value": true
+		},
+		"RPEnableSMWRatings": {
+			"value": true
+		},
+		"RPEnableSMWContests": {
+			"value": true
+		},
+		"RPShowResultsBeforeVoting": {
+			"value": false
+		},
+		"RPImmediateSMWUpdate": {
+			"value": false
+		}
 	},
 	"GroupPermissions": {
 		"*": {
@@ -158,5 +183,6 @@
 		"ratepage-contest/*": "RatePage\\ContestLogFormatter"
 	},
 	"type": "other",
-	"callback": "RatePage\\Hooks::onRegistration"
+	"callback": "RatePage\\Hooks::onRegistration",
+	"manifest_version": 2
 }
