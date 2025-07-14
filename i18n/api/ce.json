@@ -8,5 +8,7 @@
 	"apihelp-ratepage-param-pagetitle": "АгӀонан цӀе",
 	"apihelp-ratepage-param-contest": "Конкурсан иидентификатор",
 	"apihelp-query+pagerating-param-contest": "Конкурсан иидентификатор",
-	"apierror-ratepage-contest-not-exists": "$1 конкурс йац."
+	"apierror-ratepage-contest-not-exists": "$1 конкурс йац.",
+	"apierror-ratepage-page-not-exists": "Билгалйаьккхина агӀо йац.",
+	"apierror-ratepage-cannot-vote-in-contest": "Хьан бакъо йац оцу конкурсехь кхаж таса."
 }
