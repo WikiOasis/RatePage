@@ -85,7 +85,7 @@ class Rating {
 			$conds[] = 'rv_contest = rpc_id';
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			$tables,
 			$fields,
