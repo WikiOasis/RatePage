@@ -30,5 +30,6 @@
 	"ratePage-edit-contest-sub": "コンテストID: $1",
 	"ratePage-new-contest-sub": "新しいコンテストを作成中",
 	"ratePage-contest-home": "ホーム",
-	"ratePage-contests-new": "コンテストの新規作成"
+	"ratePage-contests-new": "コンテストの新規作成",
+	"ratePage-prompt-can-see": "あなたは未投票です"
 }
