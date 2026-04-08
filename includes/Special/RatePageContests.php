@@ -113,7 +113,7 @@ class RatePageContests extends SpecialPage {
 
 		//TODO: add some filtering crap
 
-		$this->getOutput()->addHTML( '<br><br>' . $pager->getFullOutput()->getText() );
+		$this->getOutput()->addHTML( '<br><br>' . $pager->getFullOutput()->getRawText() );
 		$this->getOutput()->addModules( $pager->getModuleStyles() );
 	}
 
@@ -357,7 +357,7 @@ class RatePageContests extends SpecialPage {
 				$this->getContext(),
 				$this->getLinkRenderer()
 			);
-			$form .= '<br><br>' . $pager->getFullOutput()->getText();
+			$form .= '<br><br>' . $pager->getFullOutput()->getRawText();
 			$form .= new OOUI\FieldLayout(
 				new OOUI\ButtonWidget( [
 					'label' => $this->msg( 'ratePage-edit-export' )->text(),
